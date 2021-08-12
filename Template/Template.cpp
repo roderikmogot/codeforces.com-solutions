@@ -145,20 +145,6 @@ template<class H, class... T> void DBG(H h, T... t) {
 #define dbg(...) 0
 #endif
 
-int __lcm(int a, int b){
-    int mx = max(a,b);
-    do
-    {
-        if (mx % a == 0 && mx % b == 0)
-        {
-            return mx;
-            break;
-        }
-        else
-            ++mx;
-        } while (true);
-}
-
 void solve() {
     //enter solution
     
